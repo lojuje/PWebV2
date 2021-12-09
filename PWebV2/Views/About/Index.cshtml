@@ -1,0 +1,32 @@
+﻿@model IEnumerable<PWebV2.Models.About>
+
+@{
+    ViewData["Title"] = "About Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="video-background" id="video-bg">
+    <video src="~/anim/vid4.mp4" autoplay loop muted />
+</div>
+@foreach (var item in Model)
+{
+    <section class="page-about text-white mb-0" id="about-section">
+        <h2>About me</h2>
+        <hr />
+        <div class="row">
+            <div class="col-lg-6">
+                <p>@item.Info1</p>
+            </div>
+            <div class="col-lg-6">
+                <p>@item.Info2</p>
+            </div>
+        </div>
+        <div className="about-resume">
+            <h3> You can find my resume here</h3>
+            <hr />
+            <a href="@item.Resume">
+                <img src="~/pho/cv-pic.png" style={{ height:'250px', margin:'auto', paddingTop:'1em' }} />
+            </a>
+        </div>
+    </section>
+}

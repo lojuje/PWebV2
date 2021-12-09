@@ -1,0 +1,226 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #fff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1000;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #000000;
+    text-decoration-color: #fff;
+}
+
+/*--------------PROJECTS CSS--------------------*/
+
+.project-content {
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.card-columns .card:hover .card-img {
+    opacity: 1;
+}
+
+.card-columns .card-body {
+    height: auto;
+    font-family: 'Nunito', sans-serif;
+    background: #fbfafd;
+}
+
+.card-columns .card-img {
+    height: 200px;
+    vertical-align: bottom;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    opacity: .8;
+}
+
+.card-columns a {
+    text-decoration: underline;
+    color: brown;
+}
+
+.modal .card-img {
+    height: 400px;
+    vertical-align: bottom;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-columns .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
+}
+
+/*----------------HOME CSS----------------*/
+
+section.home-section {
+    display: block;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    max-width: 75rem;
+    min-width: 450px;
+}
+
+.home-section-content {
+    background-color: #000;
+    opacity: 0.75;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-radius: 10px;
+}
+
+    .home-section-content h1 {
+        color: #fff;
+    }
+
+    .home-section-content p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        max-width: 75rem;
+        color: #fff;
+    }
+
+    .home-section-content hr {
+        color: #fff;
+        border-top: dotted 5px;
+        width: 65%;
+    }
+
+.social-links {
+    display: inline-block;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+    .social-links a i {
+        font-size: 5em;
+        height: 20px;
+        padding-bottom: 1em;
+        color: #fff;
+    }
+
+.home-section img {
+    height: 400px;
+    padding-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+/*----------------ABOUT CSS----------------*/
+
+section.page-about {
+    background-color: #000;
+    opacity: 0.75;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+    section.page-about row col {
+        text-align: center;
+    }
+
+    section.page-about p {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+.page-about hr {
+    color: #fff;
+    border-top: dotted 5px;
+    width: 65%;
+}
+
+.page-about img {
+    height: 200px;
+    width: 100px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<PWebV2.Models.Home>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="video-background" id="video-bg">
+    <video src="~/anim/vid4.mp4" autoplay loop muted />
+</div>
+<div class="container d-flex align-items-center flex-column">
+    <section class="home-section" id="home">
+            <img src="~/pho/IMG_1208_2.png"/>
+            <div class="home-section-content">
+                <h1 class="text-uppercase" align="center">Jussi Loppukaarre</h1>
+                @foreach (var item in Model)
+                {
+                    <p class="font-weight-light" align="center">@Html.DisplayFor(modelItem => item.Email)</p>
+                    <hr />
+                        <p align="center">@Html.DisplayFor(modelItem => item.Quote)</p>
+                        <div align="center" className="social-links">
+                            <a href="@Html.DisplayFor(modelItem => item.LinkedIn)" target="_blank" rel="noreferrer">
+                                <i class="fab fa-linkedin fa-3x"></i>
+                            </a>
+                            <a href="@Html.DisplayFor(modelItem => item.Github)" target="_blank" rel="noreferrer">
+                                <i class="fab fa-github-square fa-3x"></i>
+                            </a>
+                        </div>
+                 }
+                </div>
+    </section>
+</div>
+
